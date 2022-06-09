@@ -1,0 +1,5 @@
+#POST METHOD
+curl -X POST "http://localhost:80/request_record" -H "accept: text/plain" -H "Content-Type: application/json" -d '{"number_record":100}'
+
+#GET METHOD
+curl "http://localhost:80/get_record/10"
