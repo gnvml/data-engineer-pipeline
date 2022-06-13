@@ -34,7 +34,7 @@ services:
     image: bde2020/spark-worker:3.2.0-hadoop3.2
     container_name: spark-worker-1
     environment:
-      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_CORES=4
       - SPARK_WORKER_MEMORY=4g
       - SPARK_MASTER=spark://spark-master:7077
     ports:
