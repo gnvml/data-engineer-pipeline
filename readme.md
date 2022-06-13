@@ -5,7 +5,7 @@ This repository showcases how to leverage MongoDB data in your FastAPI via the M
 
 The Docker files will spin up the following environment:
 
-![Image of docker environment](https://github.com/gnvml/data-engineer-pipeline/tree/master/images/architecture.png)
+![Image of docker environment](https://github.com/gnvml/data-engineer-pipeline/blob/master/images/architecture.png)
 
 ## Getting the environment up and running
 
