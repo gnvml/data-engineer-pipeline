@@ -39,8 +39,8 @@ echo -e "\nUploading test data into Factory database\n"
 
 docker-compose exec mongo1 apt-get update
 docker-compose exec mongo1 apt-get install wget 
-docker-compose exec mongo1 wget -P factory_data https://github.com/gnvml/data-engineer-pipeline/raw/master/factory_data/product.bson
-docker-compose exec mongo1 wget -P factory_data https://github.com/gnvml/data-engineer-pipeline/raw/master/factory_data/product.metadata.json
+docker-compose exec mongo1 wget -P factory_data https://github.com/gnvml/data_source_factory/raw/master/factory_data/product.bson
+docker-compose exec mongo1 wget -P factory_data https://github.com/gnvml/data_source_factory/raw/master/factory_data/product.metadata.json
 docker-compose exec mongo1 /usr/bin/mongorestore -h rs0/mongo1:27017,mongo2:27018,mongo3:27019 -d Factory --verbose --dir factory_data --drop
 
 echo '''
